@@ -15,6 +15,7 @@
     "lint": "eslint \"lib/**/*.js\" \"test/**/*.js\"",
     "lint:types": "tsd && dtslint types",
     "lint:everything": "npm run lint:types && npm run lint",
+    "test:tas": "mocha --exit -t 10000 test/unit/query/tas.js",
     "test:unit": "npm run test:unit-only && npm run test:cli",
     "test:unit-only": "mocha --exit -t 10000 --config test/mocha-unit-config-test.js",
     "test:db": "mocha --exit -t 10000 --config test/mocha-integration-config-test.js && npm run test:tape",
