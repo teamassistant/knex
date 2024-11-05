@@ -11,6 +11,8 @@ node_modules
 test.sqlite3
 npm-debug.log
 tmp
+knex-*.tgz
+.eslintcache
 
 # Testing for the knex cli:
 bin/migrations-folder
@@ -28,3 +30,5 @@ test/coverage/*
 #VsCode workspace
 .vscode
 /coverage/
+
+test/integration/migrate/migration/
